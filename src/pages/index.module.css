@@ -1,0 +1,195 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 50%, #1e3a5f 100%);
+}
+
+.heroVerse {
+  margin-top: 2rem;
+}
+
+.heroVerse blockquote {
+  background: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #c9a227;
+  padding: 1rem 2rem;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.heroVerse cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #c9a227;
+}
+
+/* Courses Section */
+.coursesSection {
+  padding: 5rem 0;
+  background: var(--ifm-background-color);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionHeader h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.sectionHeader p {
+  font-size: 1.2rem;
+  color: var(--ifm-font-color-secondary);
+}
+
+/* Course Cards */
+.courseCardLink {
+  text-decoration: none !important;
+  color: inherit !important;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.courseCard {
+  padding: 2rem;
+  border-radius: 16px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 2px 12px rgba(30, 58, 95, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(30, 58, 95, 0.08);
+  height: 100%;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.courseCard:hover {
+  box-shadow: 0 8px 24px rgba(30, 58, 95, 0.15);
+  transform: translateY(-6px);
+  border-color: var(--ifm-color-primary);
+}
+
+.courseIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.courseTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.75rem;
+}
+
+.courseDescription {
+  color: var(--ifm-font-color-secondary);
+  line-height: 1.7;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+.courseArrow {
+  color: #c9a227;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* About Section */
+.aboutSection {
+  padding: 5rem 0;
+  background: var(--ifm-background-surface-color);
+}
+
+.aboutSection h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--ifm-color-primary);
+  margin-bottom: 1.5rem;
+}
+
+.aboutSection p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--ifm-font-color-secondary);
+  margin-bottom: 1rem;
+}
+
+.aboutHighlights {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+  border-radius: 16px;
+  margin-top: 2rem;
+}
+
+.highlightItem {
+  text-align: center;
+  color: #ffffff;
+}
+
+.highlightNumber {
+  display: block;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #c9a227;
+  line-height: 1;
+}
+
+.highlightLabel {
+  display: block;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  opacity: 0.9;
+}
+
+/* Responsive */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 4rem 1rem;
+  }
+
+  .sectionHeader h2 {
+    font-size: 2rem;
+  }
+
+  .courseCard {
+    min-height: auto;
+  }
+
+  .aboutHighlights {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .courseCard {
+  background: var(--ifm-background-surface-color);
+  border-color: rgba(93, 140, 199, 0.2);
+}
+
+[data-theme='dark'] .courseCard:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .aboutSection {
+  background: var(--ifm-background-color);
+}

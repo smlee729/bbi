@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1e3a5f"/>
+
+  <!-- Gradient overlay -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c5282;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad)"/>
+
+  <!-- Logo circle -->
+  <circle cx="600" cy="220" r="100" fill="#1e3a5f" stroke="#c9a227" stroke-width="4"/>
+
+  <!-- Bridge arch in logo -->
+  <path d="M530 260 Q600 180 670 260" stroke="#c9a227" stroke-width="6" fill="none"/>
+
+  <!-- Bridge pillars -->
+  <rect x="545" y="260" width="8" height="25" fill="#c9a227"/>
+  <rect x="647" y="260" width="8" height="25" fill="#c9a227"/>
+
+  <!-- Bridge deck -->
+  <rect x="530" y="280" width="140" height="6" fill="#c9a227"/>
+
+  <!-- Cross -->
+  <rect x="594" y="195" width="12" height="50" fill="#ffffff"/>
+  <rect x="580" y="210" width="40" height="12" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="600" y="400" font-family="system-ui, -apple-system, sans-serif" font-size="64" font-weight="800" fill="#ffffff" text-anchor="middle">Bridgeway Bible Institute</text>
+
+  <!-- Tagline -->
+  <text x="600" y="470" font-family="system-ui, -apple-system, sans-serif" font-size="32" fill="#c9a227" text-anchor="middle">말씀으로 세워가는 믿음의 여정</text>
+
+  <!-- Verse -->
+  <text x="600" y="550" font-family="system-ui, -apple-system, sans-serif" font-size="20" fill="rgba(255,255,255,0.7)" text-anchor="middle" font-style="italic">"주의 말씀은 내 발에 등이요 내 길에 빛이니이다" - 시편 119:105</text>
+</svg>
