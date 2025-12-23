@@ -25,13 +25,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
+
+      - name: Update npm
+        run: npm install -g npm@10.2.4
 
       - name: Install dependencies
-        run: yarn install
+        run: npm ci --prefer-offline --no-audit
 
       - name: Build website
-        run: yarn build
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
